@@ -62,6 +62,9 @@ body {
 	font-weight: 700;
 	float: right;
 	border: 0;
+	font-size: 2em;
+	line-height: 0.5em;
+
 }
 
 .notes-filter-input {

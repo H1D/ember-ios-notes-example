@@ -7,6 +7,13 @@ App.Router.map(function() {
   });
 });
 
+// go away from empty page
+App.IndexRoute = Ember.Route.extend({
+  redirect: function () {
+    this.transitionTo('notes');
+  }
+});
+
 App.NotesRoute = Ember.Route.extend({
   model: function () {
     return this.store.find('note');
